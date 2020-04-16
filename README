@@ -4,6 +4,13 @@ Regional Southern Ocean full version
 - All the scripts are prepared for execution on atlas-6 system at Georgia Institute of Technology. 
 - However, any of these scripts can be modified to run on other architectures. 
 
+- Build Executable: 
+  Source code: MITgcm checkpoint 64t available from mitgcm.org
+  RSO mods: rso_mods.tar to be placed in the MITgcm code
+  Ecosystem mods: code_newfe_fixO2.tar 
+  
+  Runtime options: Drake.64t.10km.42lev.input.tar 
+
 - input prep codes are to be used on gulf@eas
 - default is 10km resolution, 42 vertical z levels
 - execute the following steps
@@ -65,14 +72,4 @@ Regional Southern Ocean full version
    data.cal and data.exf are included here. 
    We also need to rename the pickup files to start with 0000000001 so that nIter0=1, in data
    
-  Execution:
 
-- to be used on atlas-6 system
-
-  Do you have an account on atlas-6 system?
-  Download codes from http://shadow.eas.gatech.edu/~Ito/webdata/codes/RSO/
-
-  Source code: MITgcm_c64t.tar.gz to be placed in home
-  RSO mods: rso_mods.tar to be placed in the MITgcm code
-  Runtime options: Drake.64t.10km.42lev.input.tar in scratch under runcase directory
-  Ecosystem mods: code_newfe_fixO2.tar 
